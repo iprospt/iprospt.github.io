@@ -1,0 +1,12 @@
+#mapcontainer {
+	position: relative;
+}
+#sourcepin {
+	position: absolute;
+	z-index: 1;
+}
+
+#destpin {
+	position: absolute;
+	z-index: 2;
+}
