@@ -4,19 +4,33 @@
 		<title>Sustainable Public Transportation</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="src/scripts.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="res/styles.css"></link>
 	</head>
 	<body>
-		<div id="page">
-			<div id="mapcontainer">
-				<img src="res/destpin.png" id="destpin"></img>
-				<img src="res/sourcepin.png" id="sourcepin"></img>
-				<img src="res/useast.png" id="map"></img>
-			</div>
-			<div id="info">
-				<p id="source">Pick a source</p>
-				<p id="dest">Pick a destination</p>
-				<p id="distance"></p>
+		<div id="page" class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<div id="mapcontainer">
+						<img src="res/destpin.png" id="destpin"></img>
+						<img src="res/sourcepin.png" id="sourcepin"></img>
+						<img src="res/useast.png" id="map"></img>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div id="menu">
+						<p id="source">Pick a source</p>
+						<p id="dest">Pick a destination</p>
+						<div id="info">
+							<p id="distance"></p>
+							<p id="hyperloop"></p>
+							<p id="car"></p>
+							<p id="air"></p>
+							<p id="airinfo"></p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
