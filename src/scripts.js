@@ -49,7 +49,7 @@ $(document).ready(function() {
 			$("#hcost").text("Approximate hyperloop ticket cost: $" + (20 + distance * 0.10).toFixed(2));
 			$("#ccost").text("Approximate fuel cost for cars: $" + (distance * 0.09).toFixed(2));
 			$("#acost").text("Approximate airline ticket cost: $" + (50 + distance * 0.08).toFixed(2));
-			$("#costinfo").text("Costs, especially for airline tickets, very greatly. Hyperloop and airline estimates are based on both locations supporting medium to high capacity airport or hyperloop facilities. Car fueling costs based on 30 MPH fuel economy.");
+			$("#costinfo").text("Costs, especially for airline tickets, very greatly. Hyperloop and airline estimates are based on both locations supporting medium to high capacity airport or hyperloop facilities. Car fueling costs based on 30 MPG fuel economy.");
 		}
 	});
 	
