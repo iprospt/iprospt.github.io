@@ -42,14 +42,15 @@ $(document).ready(function() {
 		if(sourceX > 0 && destX > 0) {
 			distance = Math.sqrt(Math.pow(sourceX-destX, 2) + Math.pow(sourceY-destY, 2)) / $("#map").width() * 1670; // map width is 1670 miles at central lattitude.
 			$("#distance").text("Distance: " + distance.toFixed(0) + " miles");
-			$("#hyperloop").text("Approximate hyperloop time: " + formatTime(distance / 600));
-			$("#car").text("Approximate driving time: " + formatTime(distance / 55));
-			$("#air").text("Approximate airplane travel time: " + formatTime(distance / 575));
+			$("#hyperloop").text(formatTime(distance / 600));
+			$("#car").text(formatTime(distance / 55));
+			$("#air").text(formatTime(distance / 575));
 			$("#airinfo").text("All times only include time spent moving. Airport security, highway traffic, and other possible delays are not accounted for.");
-			$("#hcost").text("Approximate hyperloop ticket cost: $" + (20 + distance * 0.10).toFixed(2));
-			$("#ccost").text("Approximate fuel cost for cars: $" + (distance * 0.09).toFixed(2));
-			$("#acost").text("Approximate airline ticket cost: $" + (50 + distance * 0.08).toFixed(2));
-			$("#costinfo").text("Costs, especially for airline tickets, very greatly. Hyperloop and airline estimates are based on both locations supporting medium to high capacity airport or hyperloop facilities. Car fueling costs based on 30 MPG fuel economy.");
+			$("#hcost").text("$" + (20 + distance * 0.12).toFixed(2));
+			$("#ccost").text("$" + (distance * 0.09).toFixed(2));
+			$("#acost").text("$" + (50 + distance * 0.08).toFixed(2));
+			$("#costinfo").text("Costs, especially for airline tickets, vary greatly. Hyperloop and airline estimates are based on both locations supporting medium to high capacity airport or hyperloop facilities. Car fueling costs based on 30 MPG fuel economy.");
+			$("table").css({"display": "initial"});
 		}
 	});
 	

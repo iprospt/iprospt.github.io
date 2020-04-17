@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="res/styles.css">
 	</head>
 	<body>
+		<h1>Sustainable Public Transportation</h1>
 		<div id="page" class="container-fluid">
 			<div class="row">
 				<div class="col-md-8">
@@ -20,18 +21,36 @@
 				</div>
 				<div class="col-md-4">
 					<div id="menu">
+						<h2>Distance and Cost Estimator</h2>
 						<p id="source">Pick a source</p>
 						<p id="dest">Pick a destination</p>
 						<div id="info">
 							<p id="distance"></p>
-							<p id="hyperloop"></p>
-							<p id="car"></p>
-							<p id="air"></p>
+							<table>
+								<tr>
+									<th>Mode</th>
+									<th>Time</th>
+									<th>Cost</th>
+								</tr>
+								<tr>
+									<td>Automobile</td>
+									<td id="car"></td>
+									<td id="ccost"></td>
+								</tr>
+								<tr>
+									<td>Airline</td>
+									<td id="air"></td>
+									<td id="acost"></td>
+								</tr>
+								<tr>
+									<td>Hyperloop</td>
+									<td id="hyperloop"></td>
+									<td id="hcost"></td>
+								</tr>
+							</table>
+							<br>
 							<p id="airinfo"></p>
 							<br>
-							<p id="hcost"></p>
-							<p id="ccost"></p>
-							<p id="acost"></p>
 							<p id="costinfo"></p>
 						</div>
 					</div>
