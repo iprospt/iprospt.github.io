@@ -46,8 +46,15 @@ $(document).ready(function() {
 			$("#car").text("Approximate driving time: " + formatTime(distance / 55));
 			$("#air").text("Approximate airplane travel time: " + formatTime(distance / 575));
 			$("#airinfo").text("All times only include time spent moving. Airport security, highway traffic, and other possible delays are not accounted for.");
+			$("#hcost").text("Approximate hyperloop ticket cost: $" + (20 + distance * 0.1).toFixed(2));
+			$("#ccost").text("Approximate fuel cost for cars: $" + (distance / 30 * 2.50).toFixed(2));
+			$("#acost").text("Approximate airline ticket cost: $" + (120 + distance * 0.15).toFixed(2));
+			$("#costinfo").text("Costs, especially for airline tickets, very greatly. Hyperloop and airline estimates are based on both locations supporting medium to high capacity airport or hyperloop facilities. Car fueling costs based on 30 MPH fuel economy.");
 		}
 	});
+	
+	console.log("Scripts loaded");
+	
 });
 
 function formatTime(t) {
